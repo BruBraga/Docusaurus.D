@@ -4,22 +4,22 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Projeto PROADI-SUS DIAna na APS',
+       Svg: require('@site/static/img/logodian.svg').default,
+
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Promoção de ferramentas digitais para Atenção Primária à Saúde.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Einstein Hospital Israelita',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Este projeto faz parte do portifólio do Einstein Hospital Israelita, localizado na cidade de São Paulo.
       </>
     ),
   },
