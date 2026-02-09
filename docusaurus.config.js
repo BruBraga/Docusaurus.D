@@ -73,7 +73,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Logo here',
-          src: 'img/logo_Daps.png',
+          src: 'img/logodaps.png',
 
         },
         items: [
