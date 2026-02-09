@@ -69,10 +69,11 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+
       navbar: {
         title: '',
         logo: {
-          alt: 'Logo here',
+          alt: 'Ínicio',
           src: 'img/logodaps.png',
 
         },
@@ -144,16 +145,21 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  themes: [
+  
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        
+      }),
+    ],
+  ],
     
 
- themes: [
-  [
-    require.resolve("@easyops-cn/docusaurus-search-local"),
-    {
-      hashed: true,
-    },
-  ],
-],
+ 
 };
     
 
