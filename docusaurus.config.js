@@ -65,7 +65,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo_Daps.png', //criar um card pra compartilhamento?//
+      image: 'img/docusaurus-social-card.png', //criar um card pra compartilhamento?//
       colorMode: {
         respectPrefersColorScheme: true,
       },
