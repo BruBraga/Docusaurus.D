@@ -28,3 +28,9 @@
   --ifm-color-primary-lightest: ##98b1e2;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* justificar texto em md e mdx */
+.justify {
+  text-align: justify;
+  hyphens: auto;
+}
