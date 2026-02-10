@@ -61,102 +61,68 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.png', //criar um card pra compartilhamento?//
-      colorMode: {
-        respectPrefersColorScheme: true,
+ themeConfig:
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  ({
+    image: 'img/docusaurus-social-card.png',
+
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+
+    navbar: {
+      title: '',
+      logo: {
+        alt: 'Início',
+        src: 'img/logodaps.png',
       },
-
-      navbar: {
-        title: '',
-        logo: {
-          alt: 'Ínicio',
-          src: 'img/logodaps.png',
-
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentação',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentação',
-          },
-          { type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Equipe',
-          },
-          
-          {
-            href: 'https://github.com/BruBraga/Docusaurus.D#',
-            label: 'GitHub',
-            position: 'right',
-          },
+        {
+          to: '/equipe',
+          position: 'left',
+          label: 'Equipe',
+        },
+        {
+          href: 'https://github.com/BruBraga/Docusaurus.D#',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
 
-        ],
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Conteúdo',
-            items: [
-              {
-                label: 'Documentação',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+    },
+
+    footer: {
+      style: 'light',
+    
+    },
+
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
 
   themes: [
-  
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        hashed: true,
-        
-      }),
-    ],
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+    ({
+      hashed: true,
+    }),
   ],
+],
     
 
  

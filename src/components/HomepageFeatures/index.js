@@ -5,31 +5,30 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Projeto PROADI-SUS DIAna na APS',
-       Svg: require('@site/static/img/logodian.svg').default,
+       Svg: require('@site/static/img/logodaps.svg').default,
 
     description: (
       <>
-        Promoção de ferramentas digitais para Atenção Primária à Saúde.
+        O projeto DIAna na APS tem como objetivo a promoção de ferramentas digitais para Atenção Primária à Saúde.
       </>
     ),
   },
   {
     title: 'Einstein Hospital Israelita',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/logoeinstein.svg').default,
 
     description: (
       <>
-        Este projeto faz parte do portifólio do Einstein Hospital Israelita, localizado na cidade de São Paulo.
+        Este projeto faz parte do portifólio do hospital de excelência Einstein Hospital Israelita, localizado na cidade de São Paulo.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'PROADI-SUS',
+    Svg: require('@site/static/img/logogov.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        O Programa de Apoio ao Desenvolvimento Institucional do Sistema Único de Saúde é uma iniciativa do Ministério da Saúde que promove a cooperação entre hospitais de excelência e o SUS.
       </>
     ),
   },
