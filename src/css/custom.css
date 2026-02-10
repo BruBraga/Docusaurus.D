@@ -34,3 +34,21 @@
   text-align: justify;
   hyphens: auto;
 }
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;        /* opcional, fica mais bonito */
+  margin: 2rem auto;
+  aspect-ratio: 17 / 8;
+  background: #000;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.videoWrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

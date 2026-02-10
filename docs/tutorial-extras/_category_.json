@@ -2,6 +2,7 @@
   "label": "PEC - Prontuário Eletrônico do Cidadão",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Para cada área, um vídeo introdutório destacará os principais passos, com foco nas telas e funcionalidades do PEC, facilitando a orientação do usuário e a localização das informações dentro do fluxo do sistema"
   }
 }
