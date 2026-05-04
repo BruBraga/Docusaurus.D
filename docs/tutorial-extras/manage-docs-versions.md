@@ -9,14 +9,11 @@ sidebar_position: 1
 
 A seguir, são apresentados os componentes formados pelos módulos que compõem as etapas fundamentais do atendimento à gestante, conforme ilustrado na imagem abaixo:
 
-
 <div align="center">
 ![SOAP](/img/soap.png)
 </div>
-</p>
 
-<details open>
-<summary><strong>⏪ Antecedentes</strong></summary>
+
 
 ## Antecedentes
 
@@ -34,6 +31,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   </video>
    
 </div>
+</p>
 
 ---
 
@@ -43,7 +41,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes, indicando sua origem no banco de dados do PEC. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 </p>
 
-### Antecedentes sobre Parto e Nascimento
+#### Antecedentes sobre Parto e Nascimento
 
 <div align="center">
 ![antecedentes-cidadão-sessão-1](/img/antecedentes-cidadão-sessão-1.png)
@@ -440,8 +438,10 @@ As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes,
   <td>varchar(400)</td>
   <td>não</td>
 </tr>
+
 </tbody>
+
 </table>
+
 </div>
 
-</details>
