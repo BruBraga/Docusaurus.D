@@ -38,7 +38,7 @@
 .videoWrapper {
   position: relative;
   width: 100%;
-  max-width: 900px;        /* opcional, fica mais bonito */
+  max-width: 900px;        /* opcional */
   margin: 2rem auto;
   aspect-ratio: 17 / 8;
   background: #000;
@@ -52,3 +52,66 @@
   object-fit: contain;
   display: block;
 }
+
+
+.tabela-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.tabela-antecedentes 
+  {
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.tabela-antecedentes th,
+.tabela-antecedentes td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Cabeçalho principal */
+.tabela-antecedentes thead tr {
+  background: #f0f0f0;
+}
+
+/* Grupo PEC / BD */
+.header-group .pec {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+}
+
+.header-group .bd {
+  background: #336699;
+  color: white;
+  text-align: center;
+}
+
+/* Linhas */
+.tabela-antecedentes tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Seções */
+.secao td {
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.subsecao td {
+  background: #f5f5f5;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Hover bonito */
+.tabela-antecedentes tbody tr:hover {
+  background: #e6f0ff;
+  transition: 0.2s;
+}   
