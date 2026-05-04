@@ -67,10 +67,18 @@
 }
 
 
-.tabela-antecedentes th,
-.tabela-antecedentes td {
-  padding: 10px;
-  text-align: left;
+.tabela-antecedentes td:nth-child(4),
+.tabela-antecedentes td:nth-child(5) {
+  font-size: 12px;
+}
+
+/* Aplica só nas linhas de dados  */
+.tabela-antecedentes tbody tr:not(.secao):not(.subsecao) td:nth-child(-n+3) {
+  font-size: 12px;
+}
+
+.tabela-antecedentes tbody tr:not(.secao):not(.subsecao) td:nth-last-child(-n+2) {
+  font-size: 12px;
 }
 
 /* Cabeçalho principal */
@@ -100,7 +108,7 @@
 .secao td {
   background: #ffffff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
 }
 

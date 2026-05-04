@@ -9,9 +9,14 @@ sidebar_position: 1
 
 A seguir, são apresentados os componentes formados pelos módulos que compõem as etapas fundamentais do atendimento à gestante, conforme ilustrado na imagem abaixo:
 
+
 <div align="center">
 ![SOAP](/img/soap.png)
 </div>
+</p>
+
+<details open>
+<summary><strong>⏪ Antecedentes</strong></summary>
 
 ## Antecedentes
 
@@ -29,15 +34,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   </video>
    
 </div>
-</p>
 
 ---
 
-## Mapeamento Técnico dos Campos do Sistema
+### Mapeamento Técnico dos Campos do Sistema
 
 <p className="descricao-tabela">
 As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes, indicando sua origem no banco de dados do PEC. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 </p>
+
+### Antecedentes sobre Parto e Nascimento
 
 <div align="center">
 ![antecedentes-cidadão-sessão-1](/img/antecedentes-cidadão-sessão-1.png)
@@ -244,3 +250,198 @@ As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes,
 
 </div>
 
+
+### Antecedentes resolvidos da Lista Problemas e Condições
+
+<div align="center">
+![antecedentes-cidadão-sessão-3](/img/antecedentes-cidadão-sessão-3.png)
+</div>
+
+<div className="tabela-container">
+
+<table className="tabela-antecedentes">
+
+<thead>
+
+<tr className="header-group">
+  <th colSpan="3" className="pec">PEC</th>
+  <th colSpan="4" className="bd">Banco de Dados</th>
+</tr>
+
+<tr>
+  <th>Campo</th>
+  <th>Obrigatório</th>
+  <th>Formato</th>
+  <th>Tabela</th>
+  <th>Coluna</th>
+  <th>Formato</th>
+  <th>Obrigatório</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr className="secao">
+  <td colSpan="7">Cidadão / Antecedentes sobre Parto e Nascimento</td>
+</tr>
+
+<tr className="subsecao">
+  <td colSpan="7">Antecedentes resolvidos da Lista de Problemas e Condições</td>
+</tr>
+
+<tr>
+  <td>CIAP 2</td>
+  <td>não</td>
+  <td>combo box</td>
+  <td><strong>tb_problema</strong></td>
+  <td>co_ciap</td>
+  <td>bigint</td>
+  <td>não</td>
+</tr>
+
+<tr className="secao">
+  <td colSpan="7">Início</td>
+</tr>
+
+<tr>
+  <td>Início: Data ou Idade</td>
+  <td>não</td>
+  <td>dd/mm/aaaa ou anos e meses</td>
+  <td><strong>tb_problema_evolucao</strong></td>
+  <td>dt_inicio_problema</td>
+  <td>date</td>
+  <td>não</td>
+</tr>
+
+<tr className="secao">
+  <td colSpan="7">Fim</td>
+</tr>
+
+<tr>
+  <td>Fim: Data ou Idade</td>
+  <td>não</td>
+  <td>dd/mm/aaaa ou anos e meses</td>
+  <td><strong>tb_problema_evolucao</strong></td>
+  <td>dt_inicio_problema</td>
+  <td>date</td>
+  <td>não</td>
+</tr>
+
+<tr>
+  <td>Observações</td>
+  <td>não</td>
+  <td>livre</td>
+  <td><strong>tb_problema_evolucao<br/>tb_problema</strong></td>
+  <td>ds_observacao<br/>co_ultimo_problema_evolucao</td>
+  <td>varchar(255)<br/>bigint</td>
+  <td>não</td>
+</tr>
+
+<tr className="secao">
+  <td colSpan="7">Antecedentes hospitalares</td>
+</tr>
+
+<tr className="subsecao">
+  <td colSpan="7">Cirurgia e/ou internação</td>
+</tr>
+
+<tr>
+  <td>Cirurgia e/ou internação</td>
+  <td>sim</td>
+  <td>livre</td>
+  <td><strong>tb_cirurgias_internacoes</strong></td>
+  <td>ds_cirurgia_internacao</td>
+  <td>varchar(400)</td>
+  <td>não</td>
+</tr>
+
+<tr className="secao">
+  <td colSpan="7">Realizada em</td>
+</tr>
+
+<tr>
+  <td>Data ou Idade</td>
+  <td>não</td>
+  <td>dd/mm/aaaa ou anos e meses</td>
+  <td><strong>tb_cirurgias_internacoes</strong></td>
+  <td>dt_cirurgia_internacao</td>
+  <td>date</td>
+  <td>não</td>
+</tr>
+
+<tr>
+  <td>Observações</td>
+  <td>não</td>
+  <td>livre</td>
+  <td><strong>tb_cirurgias_internacoes</strong></td>
+  <td>ds_observacoes</td>
+  <td>varchar(800)</td>
+  <td>não</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+### Antecedentes Familiar 
+
+<div align="center">
+![antecedentes-familiar](/img/antecedentes-familiar.png)
+</div>
+
+<div className="tabela-container">
+
+<table className="tabela-antecedentes">
+
+<thead>
+
+<tr className="header-group">
+  <th colSpan="3" className="pec">PEC</th>
+  <th colSpan="4" className="bd">Banco de Dados</th>
+</tr>
+
+<tr>
+  <th>Campo</th>
+  <th>Obrigatório</th>
+  <th>Formato</th>
+  <th>Tabela</th>
+  <th>Coluna</th>
+  <th>Formato</th>
+  <th>Obrigatório</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr className="secao">
+  <td colSpan="7">Cidadão / Lista de problemas dos familiares</td>
+</tr>
+
+<tr>
+  <td>CIAP 2</td>
+  <td>não</td>
+  <td>combo box</td>
+  <td><strong>rl_antecedente_ciap</strong></td>
+  <td>co_ciap</td>
+  <td>bigint</td>
+  <td>sim</td>
+</tr>
+
+<tr>
+  <td>Observações</td>
+  <td>não</td>
+  <td>livre</td>
+  <td><strong>rl_antecedente_ciap</strong></td>
+  <td>ds_observacao</td>
+  <td>varchar(400)</td>
+  <td>não</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</details>
