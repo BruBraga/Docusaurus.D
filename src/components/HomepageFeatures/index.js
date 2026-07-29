@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Projeto PROADI-SUS DIAna na APS',
-       Svg: require('@site/static/img/logodaps.svg').default,
+       Svg: require('@site/static/img/home/logodaps.svg').default,
 
     description: (
       <>
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Einstein Hospital Israelita',
-    Svg: require('@site/static/img/logoeinstein.svg').default,
+    Svg: require('@site/static/img/home/logoeinstein.svg').default,
 
     description: (
       <>
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'PROADI-SUS',
-    Svg: require('@site/static/img/logogov.svg').default,
+    Svg: require('@site/static/img/home/logogov.svg').default,
     description: (
       <>
         O Programa de Apoio ao Desenvolvimento Institucional do Sistema Único de Saúde é uma iniciativa do Ministério da Saúde que promove a cooperação entre hospitais de excelência e o SUS.

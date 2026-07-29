@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Catálogo de Dados DIAna',
   tagline: 'Portal de Documentação Técnica',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/home/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -74,7 +74,7 @@ const config = {
       title: '',
       logo: {
         alt: 'Início',
-        src: 'img/logodaps.png',
+        src: 'img/home/logodaps.png',
       },
       items: [
         {

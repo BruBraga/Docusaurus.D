@@ -34,12 +34,12 @@ const sidebars = {
           type: 'category',
           label: 'Pré-Natal',
           items: [
-            'pec/prenatal/antecedentes',
-            'pec/prenatal/subjetivo',
-            'pec/prenatal/objetivo',
-            'pec/prenatal/avaliacao',
-            'pec/prenatal/plano',
-            'pec/prenatal/finalizacao',
+            'pec/prenatal/antecedentes/index',
+            'pec/prenatal/subjetivo/index',
+            'pec/prenatal/objetivo/index',
+            'pec/prenatal/avaliacao/index',
+            'pec/prenatal/plano/index',
+            'pec/prenatal/finalizacao/index',
           ],
         },
         {
