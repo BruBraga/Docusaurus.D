@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wiki DIANA na APS',
-  tagline: 'Documentação do Projeto',
+  title: 'Catálogo de Dados DIAna',
+  tagline: 'Portal de Documentação Técnica',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -37,8 +37,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+      defaultLocale: 'pt-BR',
+      locales: ['pt-BR'],
   },
 
   presets: [
@@ -115,17 +115,13 @@ const config = {
   }),
 
   themes: [
-  [
-    require.resolve("@easyops-cn/docusaurus-search-local"),
-    /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-    ({
-      hashed: true,
-    }),
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+      },
+    ],
   ],
-],
-    
-
- 
 };
     
 

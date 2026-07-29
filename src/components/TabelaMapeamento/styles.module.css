@@ -1,0 +1,50 @@
+.tabelaContainer {
+  overflow-x: auto;
+  margin: 1.5rem auto;
+}
+
+.tituloTabela {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tabelaAntecedentes {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.larguraFixa {
+  table-layout: fixed;
+}
+
+.tabelaAntecedentes th,
+.tabelaAntecedentes td {
+  border: 1px solid var(--ifm-table-border-color);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.headerGroup th.pec {
+  background-color: #2864AE;
+  color: #fff;
+  text-align: center;
+}
+
+.headerGroup th.bd {
+  background-color: #071D41;
+  color: #fff;
+  text-align: center;
+}
+
+.secao td {
+  background-color: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+.subsecao td {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 500;
+}

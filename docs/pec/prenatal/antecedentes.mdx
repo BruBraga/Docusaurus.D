@@ -1,0 +1,47 @@
+---
+title: Antecedentes
+---
+
+import Figura from '@site/src/components/Figura';
+import VideoTutorial from '@site/src/components/VideoTutorial';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import partoNascimentoData from './data/partoNascimento.data';
+import listaProblemasData from './data/listaProblemas.data';
+import antecedentesFamiliarData from './data/antecedentesFamiliar.data';
+
+# Antecedentes
+
+Para apoiar a compreensão das funcionalidades do módulo de **Antecedentes**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
+
+<VideoTutorial src="/videos/soap_antecedentes.mp4" />
+
+### Mapeamento Técnico dos Campos do Sistema
+
+As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes, indicando sua origem no banco de dados do PEC. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
+
+### Antecedentes sobre Parto e Nascimento
+
+<Figura
+  src="/img/antecedentes-cidadao-sessao-1.png"
+  alt="Antecedentes sobre Parto e Nascimento"
+/>
+
+<TabelaMapeamento linhas={partoNascimentoData} />
+
+### Antecedentes resolvidos da Lista Problemas e Condições
+
+<Figura
+  src="/img/antecedentes-cidadao-sessao-3.png"
+  alt="Antecedentes resolvidos da Lista Problemas e Condições"
+/>
+
+<TabelaMapeamento linhas={listaProblemasData} />
+
+### Antecedentes Familiar
+
+<Figura
+  src="/img/antecedentes-familiar.png"
+  alt="Antecedentes Familiar"
+/>
+
+<TabelaMapeamento linhas={antecedentesFamiliarData} larguraFixa />

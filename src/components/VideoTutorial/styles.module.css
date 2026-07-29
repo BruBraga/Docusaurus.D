@@ -1,0 +1,9 @@
+.videoWrapper {
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.videoWrapper video {
+  width: 100%;
+  border-radius: 8px;
+}
