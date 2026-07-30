@@ -48,10 +48,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/BruBraga/Docusaurus.D#',
         },
         blog: false, //nesta linha eu desativei a página blog
         theme: {
@@ -67,9 +63,11 @@ const config = {
     image: 'img/docusaurus-social-card.png',
 
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
-
+    
     navbar: {
       title: '',
       logo: {
@@ -87,11 +85,6 @@ const config = {
           to: '/equipe',
           position: 'left',
           label: 'Equipe',
-        },
-        {
-          href: 'https://github.com/BruBraga/Docusaurus.D#',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },

@@ -1,3 +1,90 @@
 ---
 title: Plano
 ---
+
+import Figura from '@site/src/components/Figura';
+import VideoTutorial from '@site/src/components/VideoTutorial';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+
+import { planoData } from './data/plano.data';
+import { prescricaoData } from './data/prescricao.data';
+import { solicitacaoExameData } from './data/solicitacaoExame.data';
+import { exameComumData } from './data/exameComum.data';
+import { exameAltoCustoData } from './data/exameAltoCusto.data';
+import { atestadosData } from './data/atestados.data';
+import { declaracaoComparecimentoData } from './data/declaracaoComparecimento.data';
+import { orientacoesData } from './data/orientacoes.data';
+import { encaminhamentosData } from './data/encaminhamentos.data';
+
+# Plano
+
+Para apoiar a compreensão das funcionalidades do módulo **Plano**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
+
+<VideoTutorial src="/videos/soap_plano.mp4" />
+
+## Mapeamento Técnico dos Campos do Sistema
+
+As tabelas a seguir apresentam o mapeamento dos campos da área da elaboração do Plano, indicando sua origem no banco de dados do PEC.
+
+<Figura
+  src="/img/prenatal/tela_14_plano.png"
+  alt="Plano"
+/>
+
+<TabelaMapeamento linhas={planoData} />
+
+<Figura
+  src="/img/prenatal/tela_15_plano_prescricao.png"
+  alt="Prescrição"
+/>
+
+<TabelaMapeamento linhas={prescricaoData} />
+
+<Figura
+  src="/img/prenatal/tela_18_plano_solicitacao_exame.png"
+  alt="Solicitação de exames"
+/>
+
+<TabelaMapeamento linhas={solicitacaoExameData} />
+
+<Figura
+  src="/img/prenatal/tela_19_plano_solicitacao_exame_comum.png"
+  alt="Solicitação de exames comuns"
+/>
+
+<TabelaMapeamento linhas={exameComumData} />
+
+<Figura
+  src="/img/prenatal/tela_20_plano_solicitacao_exame_alto_custo.png"
+  alt="Solicitação de exames de alto custo"
+/>
+
+<TabelaMapeamento linhas={exameAltoCustoData} />
+
+<Figura
+  src="/img/prenatal/tela_21_plano_atestados.png"
+  alt="Atestados"
+/>
+
+<TabelaMapeamento linhas={atestadosData} />
+
+<Figura
+  src="/img/prenatal/tela_22_plano_atestados_declaracao_comparecimento.png"
+  alt="Declaração de comparecimento"
+/>
+
+<TabelaMapeamento linhas={declaracaoComparecimentoData} />
+
+<Figura
+  src="/img/prenatal/tela_23_plano_orientacoes.png"
+  alt="Orientações"
+/>
+
+<TabelaMapeamento linhas={orientacoesData} />
+
+<Figura
+  src="/img/prenatal/tela_24_plano_encaminhamentos.png"
+  alt="Encaminhamentos"
+/>
+
+<TabelaMapeamento linhas={encaminhamentosData} />

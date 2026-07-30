@@ -1,3 +1,30 @@
 ---
-title: Finalizacao
+title: Finalização do Atendimento
 ---
+
+import Figura from '@site/src/components/Figura';
+import VideoTutorial from '@site/src/components/VideoTutorial';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+
+import { finalizacaoData } from './data/finalizacao.data';
+
+
+# Finalização do Atendimento
+
+Para apoiar a compreensão das funcionalidades do módulo de **Finalização do Atendimento**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
+
+<VideoTutorial src="/videos/soap_finalizacao.mp4" />
+
+
+## Mapeamento Técnico dos Campos do Sistema
+
+As tabelas a seguir apresentam o mapeamento dos campos da área da **Finalização do Atendimento**, indicando sua origem no banco de dados do PEC.
+
+
+<Figura
+  src="/img/prenatal/tela_25_finalizacao.png"
+  alt="Finalização do Atendimento"
+/>
+
+
+<TabelaMapeamento linhas={finalizacaoData} />

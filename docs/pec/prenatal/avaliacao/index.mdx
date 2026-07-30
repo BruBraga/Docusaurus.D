@@ -1,3 +1,62 @@
 ---
 title: Avaliacao
 ---
+
+import Figura from '@site/src/components/Figura';
+import VideoTutorial from '@site/src/components/VideoTutorial';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+
+import problemaAtendimentoData from './data/problemaAtendimento.data';
+import preNatalData from './data/preNatal.data';
+import alergiasData from './data/alergias.data';
+
+# Avaliação
+
+Para apoiar a compreensão das funcionalidades do módulo **Avaliação**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
+
+<VideoTutorial
+  src="/videos/soap_avaliacao.mp4"
+/>
+
+## Mapeamento Técnico dos Campos do Sistema
+
+As tabelas a seguir apresentam o mapeamento dos campos da área de Avaliação, indicando sua origem no banco de dados do PEC.
+
+<Figura
+    src="/img/prenatal/tela_11_avaliacao_problema_atendimento.png"
+    alt="Problemas e condições avaliados"
+/>
+
+{problemaAtendimentoData.secoes.map((secao, index) => (
+  <TabelaMapeamento
+    key={index}
+    titulo={secao.titulo}
+    linhas={secao.linhas}
+  />
+))}
+
+<Figura
+    src="/img/prenatal/tela_12_avaliacao_pre_natal.png"
+    alt="Pré-natal"
+/>
+
+{preNatalData.secoes.map((secao, index) => (
+  <TabelaMapeamento
+    key={index}
+    titulo={secao.titulo}
+    linhas={secao.linhas}
+  />
+))}
+
+<Figura
+    src="/img/prenatal/tela_13_avaliacao_alergias.png"
+    alt="Alergias"
+/>
+
+{alergiasData.secoes.map((secao, index) => (
+  <TabelaMapeamento
+    key={index}
+    titulo={secao.titulo}
+    linhas={secao.linhas}
+  />
+))}
